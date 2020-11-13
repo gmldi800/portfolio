@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.logo {
+  margin-left: 25px;
+}
+.nav {
+  display: flex;
+}
+
+.nav a {
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.slider {
+  position: relative;
+}
+
+.slide .item {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide .item_01 {
+  background-image: url(./Twilight.image/bg/bg_1.jpg);
+}
+
+.slide .item_02 {
+  background-image: url(./Twilight.image/bg/bg_2.jpg);
+}
+
+.slide .item_03 {
+  background-image: url(./Twilight.image/bg/bg_3.jpg);
+}
+.slide .item_04 {
+  background-image: url(./Twilight.image/bg/bg_4.jpg);
+}
+.slide .item_05 {
+  background-image: url(./Twilight.image/bg/bg_5.jpg);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 60px;
+}
+
+.arrow i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+/* slick_dots */
+.slick-dots li {
+  bottom: 50px;
+}
