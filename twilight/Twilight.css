@@ -7,7 +7,27 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+.go_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 0 10px 6 rgba(0, 0, 0, 0.12);
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* header */
 .header {
   display: flex;
   align-items: center;
@@ -74,7 +94,6 @@ body {
 
 .arrow i {
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   margin: 0 10px;
 }
@@ -82,4 +101,59 @@ body {
 /* slick_dots */
 .slick-dots li {
   bottom: 50px;
+}
+
+/* section_01 */
+.section_01 {
+}
+.section_01 img {
+  width: 163px;
+  height: 230px;
+  padding-right: 50%;
+  margin-top: 60px;
+}
+
+.container.sec_01 {
+  display: flex;
+}
+
+.tel_02,
+.tel_03,
+.tel_04,
+.tel_05,
+.tel_06,
+.tel_07 {
+  display: flex;
+}
+
+.section_01 span {
+  border-left: 2px solid #999;
+  line-height: 2px;
+  margin: 0 15px;
+}
+
+.section_01.text {
+  line-height: 26px;
+  margin-top: 60px;
+  border-bottom: 2px solid #999;
+  /* background: chartreuse; */
+}
+.section_01 h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.tel_02 {
+  font-size: 18px;
+}
+.tel_02 p {
+  color: red;
+}
+
+.section01_info {
+  font-size: 15px;
+}
+.section_01 h5 {
+  color: #777;
+  font-weight: 600;
+  margin-right: 20px;
 }
