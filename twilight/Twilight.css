@@ -152,8 +152,31 @@ body {
 .section01_info {
   font-size: 15px;
 }
+
 .section_01 h5 {
   color: #777;
   font-weight: 600;
   margin-right: 20px;
+}
+
+.sec_01_foot {
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+.sec_01_foot h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sec_01_foot h5 {
+  font-size: 16px;
+  color: #888;
+}
+.sec_01_foot h6 {
+  font-size: 17px;
+  color: #888;
+  font-weight: 700;
+  margin-top: 15px;
 }
