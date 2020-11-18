@@ -72,3 +72,7 @@ h2 {
 .line::after {
   right: 0;
 }
+/* info */
+.director_info img {
+  width: 100px;
+}
