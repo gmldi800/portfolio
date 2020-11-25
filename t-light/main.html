@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twilight</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,20 +18,17 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
     <!-- go_top -->
     <div class="go_top">
-      <i class="xi-arrow-up"></i>
+      <a href=""> <i class="xi-arrow-up"></i></a>
     </div>
     <!-- header -->
     <div class="header">
@@ -37,9 +36,10 @@
         <a href="./main.html"><img src="./Twilight.image/logo/logo.png" alt="" /></a>
       </div>
       <ul class="nav">
-        <li><a href="./page_01.html">감독소개</a></li>
-        <li><a href="#">영화소개</a></li>
-        <li><a href="#">배우소개</a></li>
+        <li><a href="./main.html">홈</a></li>
+        <li><a href="./page01.html">영화소개</a></li>
+        <li><a href="./page02.html">감독소개</a></li>
+        <li><a href="./page03.html">배우소개</a></li>
       </ul>
     </div>
 
@@ -116,7 +116,7 @@
       <div class="container">
         <div class="title_area">
           <h3>등장인물</h3>
-          <a href="#"><p>더보기</p></a>
+          <a href="./page03.html"><p>더보기</p></a>
         </div>
         <div class="avatar">
           <div><img src="./Twilight.image/person/1.jpg" alt="" /></div>
@@ -135,9 +135,9 @@
         <!-- sec_03 text -->
         <div class="section_03 text">
           <div class="sec_03_title">
-          <h3>감독 : 캐서린 하드윅 (Catherine Hardwicke)</h3>
-          <h6>영화감독, 미술감독</h6>
-        </div>
+            <h3>감독 : 캐서린 하드윅 (Catherine Hardwicke)</h3>
+            <h6>영화감독, 미술감독</h6>
+          </div>
           <div class="tel_03">
             <h5>출생</h5>
             <p>1955년 10월 21일, 미국</p>
@@ -161,13 +161,46 @@
     </section>
     <!-- banner -->
     <div class="banner">
-      <!-- <img src="./Twilight.image/banner/banner.jpg" alt=""> -->
-        <p>photo(1/12)</p>
+      <div class="photo">
+        <div></div>
       </div>
+      <div class="text"></div>
     </div>
+    <!-- section04 -->
+    <section class="section_04">
+      <div class="container">
+        <div class="title_area">
+          <h3>시리즈 순서</h3>
+          <a href="./page01.html"><p>더보기</p></a>
+        </div>
+        <div class="avatar">
+          <div><img src="./Twilight.image/post/1.jpg" alt="" /></div>
+          <div><img src="./Twilight.image/post/2.jpg" alt="" /></div>
+          <div><img src="./Twilight.image/post/3.jpg" alt="" /></div>
+          <div><img src="./Twilight.image/post/4.jpg" alt="" /></div>
+          <div><img src="./Twilight.image/post/5.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
     <!-- footer -->
-    <footer>푸터</footer>
-
+    <footer>
+      <div class="footer container">
+        <div class="footer_left">
+          <div class="footer_logo"><img src="./Twilight.image/logo/white_logo.png" alt="" /></div>
+          <span>© 2008 — 2012</span>
+        </div>
+        <div class="footer_right">
+          <p>
+            제작진<br />
+            배급사 ㅣ NEW<br />
+            수입사 ㅣ 판씨네마㈜<br />
+            온라인 마케팅 ㅣ ㈜디지털오션<br />
+            원작 ㅣ 스테파니 메이어 (Stephenie Meyer)<br />
+            배급사 ㅣ 판씨네마㈜
+          </p>
+        </div>
+      </div>
+    </footer>
     <script>
       $('.slide').slick({
         dots: true,
@@ -176,12 +209,19 @@
         prevArrow: $('.prev_btn'),
         nextArrow: $('.next_btn')
       })
-    </script>
 
-    <script>
       var goTop = $('.go_top')
+      var header = $('.header')
 
       $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop()
+
+        if (scrollTopValue > 0) {
+          header.addClass('active')
+        } else {
+          header.removeClass('active')
+        }
+
         if (scrollTopValue > 500) {
           goTop.fadeIn()
         } else {
