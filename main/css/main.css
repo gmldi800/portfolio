@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&Roboto:wght@300;400;500;700&display=swap');
 :root {
   --primary: #000;
   --accent: #21ade7;
@@ -26,6 +26,187 @@ main {
 }
 span {
   color: var(--accent);
+}
+/* dimm */
+.dimm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+/* modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 872px;
+  height: 628px;
+  z-index: 100;
+  display: none;
+  /* font-family: 'Roboto', sans-serif; */
+}
+.modal_top {
+  position: absolute;
+  top: 27px;
+  right: 80px;
+  color: #21ade7;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  /* font-family: 'Roboto', sans-serif; */
+}
+.modal_top i {
+  margin-left: 10px;
+  font-size: 30px;
+  line-height: 20px;
+}
+.close i {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+/* modal_left */
+.photo {
+  width: 214px;
+  height: 214px;
+  margin: 92px 0 0 39px;
+}
+.moadal_left {
+  margin: 18px 0 0 64px;
+}
+
+.info {
+  width: 415px;
+  display: flex;
+}
+
+.moadal_left h4 {
+  width: 53px;
+  color: #21ade7;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 15px;
+  line-height: 1.7;
+}
+.moadal_left p {
+  line-height: 1.7;
+}
+/* modal_right */
+.modal_right {
+  position: absolute;
+  top: 103px;
+  right: 58px;
+  display: flex;
+}
+.modal h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+}
+.edu_text,
+.certi_text {
+  display: flex;
+  flex-direction: column;
+}
+.e_2019,
+.e_2020,
+.c_2020,
+.d_2020 {
+  display: flex;
+}
+.e_2019 {
+  margin: 0 30px 8px 0;
+}
+.modal_right h2 {
+  margin-bottom: 17px;
+}
+
+.modal_right p {
+  display: block;
+  margin-right: 7px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: 'Roboto', sans-serif;
+}
+.modal_right h5 {
+  line-height: 22px;
+}
+.edu {
+  display: block;
+  margin-right: 10px;
+}
+.edu,
+.certi {
+  font-size: 14px;
+  color: #4e4d4d;
+}
+/* modal_skill */
+.skill {
+  position: absolute;
+  top: 290px;
+  left: 425px;
+  display: flex;
+  width: 360px;
+  /* height: 168px; */
+}
+.skill h2 {
+  margin-right: 36px;
+}
+.skill .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill .skills .sk {
+  width: 44px;
+  height: 44px;
+  margin-right: 60px;
+  margin-bottom: 36px;
+}
+.sk p {
+  color: #969696;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 11px;
+  font-family: 'Roboto', sans-serif;
+}
+.skill .skills .sk:nth-child(3),
+.skill .skills .sk:nth-child(6) {
+  margin-right: 0;
+}
+/* modal_like */
+.like {
+  position: absolute;
+  top: 466px;
+  left: 425px;
+  display: flex;
+}
+.like h2 {
+  margin-right: 45px;
+}
+.like .likes {
+  display: flex;
+  margin-top: 20px;
+}
+.like .likes .li {
+  width: 46px;
+  height: 46px;
+  margin-right: 60px;
+  margin-bottom: 36px;
+}
+.like .likes .li p {
+  color: #969696;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 11px;
+  font-family: 'Roboto', sans-serif;
 }
 /* header */
 .top {
@@ -78,61 +259,4 @@ span {
 }
 .my {
   letter-spacing: 1.6rem;
-}
-
-/* modal */
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 872px;
-  height: 628px;
-  z-index: 1000;
-}
-.modal_top {
-  position: absolute;
-  top: 25px;
-  right: 106px;
-  color: #21ade7;
-  font-size: 17px;
-  display: flex;
-}
-.modal_top i {
-  margin-left: 10px;
-  font-size: 30px;
-  line-height: 20px;
-}
-.close {
-  position: absolute;
-  top: 27px;
-  right: 55px;
-  cursor: pointer;
-}
-/* modal_photo */
-.photo img {
-  width: 214px;
-  height: 214px;
-  margin: 92px 0 0 39px;
-}
-.photo_info {
-  margin: 18px 0 0 64px;
-}
-.info {
-  display: flex;
-}
-.info h4 {
-  width: 53px;
-  color: #21ade7;
-  font-size: 15px;
-  font-weight: bold;
-  margin-right: 15px;
-  line-height: 1.7;
-  /* background: black; */
-}
-
-.info p {
-  font-size: 14px;
-  line-height: 1.7;
 }
