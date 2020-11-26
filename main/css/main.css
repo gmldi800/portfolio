@@ -15,6 +15,10 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+main {
+  position: relative;
+  /* background: black; */
+}
 .container {
   width: 90%;
   max-width: 1315px;
@@ -59,7 +63,7 @@ span {
 
 /* section */
 .banner {
-  background: url(../main.images/bg1.jpg) no-repeat;
+  background: url(../images/bg1.jpg);
   background-size: cover;
   height: 780px;
 }
@@ -74,4 +78,61 @@ span {
 }
 .my {
   letter-spacing: 1.6rem;
+}
+
+/* modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 872px;
+  height: 628px;
+  z-index: 1000;
+}
+.modal_top {
+  position: absolute;
+  top: 25px;
+  right: 106px;
+  color: #21ade7;
+  font-size: 17px;
+  display: flex;
+}
+.modal_top i {
+  margin-left: 10px;
+  font-size: 30px;
+  line-height: 20px;
+}
+.close {
+  position: absolute;
+  top: 27px;
+  right: 55px;
+  cursor: pointer;
+}
+/* modal_photo */
+.photo img {
+  width: 214px;
+  height: 214px;
+  margin: 92px 0 0 39px;
+}
+.photo_info {
+  margin: 18px 0 0 64px;
+}
+.info {
+  display: flex;
+}
+.info h4 {
+  width: 53px;
+  color: #21ade7;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 15px;
+  line-height: 1.7;
+  /* background: black; */
+}
+
+.info p {
+  font-size: 14px;
+  line-height: 1.7;
 }
