@@ -1,21 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&Roboto:wght@300;400;500;700&display=swap');
-:root {
-  --primary: #000;
-  --accent: #21ade7;
-  --gray-light: #888;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-main {
+.wrap {
   position: relative;
   /* background: black; */
 }
@@ -27,16 +12,7 @@ main {
 span {
   color: var(--accent);
 }
-/* dimm */
-.dimm {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-  display: none;
-}
+
 /* modal */
 .modal {
   position: absolute;
@@ -48,6 +24,7 @@ span {
   height: 628px;
   z-index: 100;
   display: none;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.7);
   /* font-family: 'Roboto', sans-serif; */
 }
 .modal_top {
@@ -73,8 +50,16 @@ span {
   color: #000;
   font-weight: bold;
 }
+
+.modal footer {
+  position: absolute;
+  bottom: 12px;
+  right: 50%;
+  color: #21ade7;
+  font-size: 10px;
+}
 /* modal_left */
-.photo {
+.modal_01 .photo {
   width: 214px;
   height: 214px;
   margin: 92px 0 0 39px;
@@ -106,7 +91,7 @@ span {
   right: 58px;
   display: flex;
 }
-.modal h2 {
+.modal_01 h2 {
   font-size: 17px;
   font-weight: 500;
   color: #222;
@@ -115,6 +100,13 @@ span {
 .certi_text {
   display: flex;
   flex-direction: column;
+}
+
+.edu_text p,
+.certi p {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
 .e_2019,
 .e_2020,
@@ -208,54 +200,159 @@ span {
   margin-top: 11px;
   font-family: 'Roboto', sans-serif;
 }
+
+/* button*/
+.next {
+  position: absolute;
+  top: 46%;
+  right: 300px;
+  /* transform: translateY(-50%); */
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+  width: 60px;
+}
+.prev {
+  position: absolute;
+  top: 45%;
+  left: 300px;
+  /* transform: translateY(-50%); */
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+  width: 60px;
+}
+.modal_02 {
+  /* background: #fffbec; */
+}
+.modal_02 h2 {
+  position: absolute;
+  top: 140px;
+  left: 84px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.modal_02 p {
+  position: absolute;
+  top: 200px;
+  left: 85px;
+  color: #777777;
+  width: 300px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.modal_02 .photo {
+  position: absolute;
+  top: 110px;
+  right: 70px;
+  width: 370px;
+  font-family: 'Roboto', sans-serif;
+}
+.modal_02 h5 {
+  position: absolute;
+  bottom: 146px;
+  right: 50px;
+  color: #777;
+  font-size: 13px;
+}
+/* dimm */
+.dimm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  display: none;
+}
+
 /* header */
-.top {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: gray; */
   height: 160px;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
+.header .container.top {
+  display: flex;
+  align-items: center;
+}
 .left {
   display: flex;
+  margin-right: auto;
 }
-
+.left .logo:hover {
+  filter: invert(48%) sepia(86%) saturate(971%) hue-rotate(166deg) brightness(103%) contrast(81%);
+}
 .logo_extra {
-  line-height: 28px;
-  margin-left: 23px;
-  font-size: 14px;
+  line-height: 50px;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #333;
 }
 .nav {
   display: flex;
 }
 
 .nav li {
-  margin-right: 30px;
   font-size: 20px;
   letter-spacing: -1px;
+  position: relative;
+  padding: 0 20px;
+  margin: 0 20px;
 }
-.nav li:nth-child(1) {
-  margin-right: 69px;
+
+.nav li a {
+  display: block;
 }
-.nav li:nth-child(2) {
-  margin-right: 0;
+
+.nav li a:hover {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.nav li a:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: var(--accent);
 }
 
 /* section */
 .banner {
-  background: url(../images/bg1.jpg);
+  background: url(../images/bg1.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
   background-size: cover;
-  height: 780px;
+  position: relative;
 }
 .banner_text {
-  padding: 230px 0;
   font-size: 30px;
   letter-spacing: 1rem;
   line-height: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  /* background: #000; */
 }
 .hi {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .my {
   letter-spacing: 1.6rem;

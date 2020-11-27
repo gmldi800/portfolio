@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="./css/04_banner.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="container top">
+          <div class="left">
+            <a href="./index.html" class="logo"> <img src="./images/logo.png" alt="logo" /></a>
+            <p class="logo_extra">Designer/Publisher</p>
+          </div>
+          <ul class="nav">
+            <li class="about"><a href="#">About me</a></li>
+            <li class="port"><a href="./01_publising.html">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container page">
+        <ul class="gnb">
+          <h1>Web</h1>
+          <li><a href="./01_publising.html">Publising</a></li>
+          <li><a href="./02_ui,ux.html">UI/UX</a></li>
+          <li><a href="./03_web.html">Web Page</a></li>
+          <li><a href="./04_banner.html">Banner & Poster</a></li>
+        </ul>
+
+        <div class="main">
+          <div class="main_title">
+            <h1>Banner & Poster</h1>
+            <p>
+              다양한 콘셉트의 <span>실무 배너</span>와 <span>포스터</span>를 디자인하였습니다.<br />
+              툴은 <span>Photoshop</span>과 <span>Illustrator</span>, <span>Figma</span>를 사용하였습니다. <span>클릭</span>하시면 자세히 보실 수 있습니다.
+            </p>
+            <div class="line"></div>
+          </div>
+
+          <div class="banners">
+            <ul class="popup-gallery">
+              <li>
+                <a href="./images/04_banner/banners/01_banner.jpg" title="Super sale 배너"><img src="./images/04_banner/banners/01_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/02_banner.jpg" title="봄세일 배너"><img src="./images/04_banner/banners/02_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/03_banner.jpg" title="체험단 신청 배너"><img src="./images/04_banner/banners/03_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/04_banner.jpg" title="새해복 배너"><img src="./images/04_banner/banners/04_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/05_banner.jpg" title="여름맞이 세일 배너"><img src="./images/04_banner/banners/05_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/06_banner.jpg" title="겨울맞이 세일 배너"><img src="./images/04_banner/banners/06_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/07_banner.jpg" title="당첨자 경품 배너"><img src="./images/04_banner/banners/07_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/08_banner.jpg" title="새해선물 광고 배너"><img src="./images/04_banner/banners/08_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/09_banner.jpg" title="봄맞이 이벤트 배너"><img src="./images/04_banner/banners/09_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/10_banner.jpg" title="멤버십 카드 배너"><img src="./images/04_banner/banners/10_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/11_banner.jpg" title="새해 이벤트 배너"><img src="./images/04_banner/banners/11_banner.jpg" alt="" /></a>
+              </li>
+              <li>
+                <a href="./images/04_banner/banners/12_banner.jpg" title="배송안내 배너"><img src="./images/04_banner/banners/12_banner.jpg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var nav =$('.nav')
+      var navOffValue =nav.offset().top
+
+      $(window).scroll(funtion(){
+        var scrollTopValue = $(document).scr
+      })
+      $(document).ready(function () {
+        $('.popup-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+              return item.el.attr('title') + '<small>by 희원</small>'
+            }
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

@@ -131,3 +131,19 @@ img {
   display: block;
   width: 100%;
 }
+
+:root {
+  --primary: #000;
+  --accent: #21ade7;
+  --gray-light: #888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
