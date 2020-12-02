@@ -1,35 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&Roboto:wght@300;400;500;700&display=swap');
 
-.body {
-  position: relative;
-  /* background: black; */
-}
 .container {
-  width: 90%;
-  max-width: 1315px;
+  width: 1382px;
   margin: 0 auto;
 }
+
 span {
   color: var(--accent);
 }
 /* header */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 160px;
   width: 100%;
-  /* background: #333; */
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 .header .container.top {
   display: flex;
   align-items: center;
 }
+
 .left {
   display: flex;
   margin-right: auto;
@@ -48,15 +42,16 @@ span {
   display: flex;
 }
 
-.nav li {
+.header ul.nav li {
   font-size: 20px;
   letter-spacing: -1px;
   position: relative;
-  padding: 0 20px;
-  margin: 0 20px;
+}
+ul.nav li:nth-child(1) {
+  margin-right: 50px;
 }
 
-.nav li a {
+ul.nav li a {
   display: block;
 }
 
@@ -70,16 +65,18 @@ span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: -16px;
   width: 8px;
   height: 8px;
   border-radius: 100%;
   background: var(--accent);
 }
-
+.container.bottom {
+  display: flex;
+}
 /* gnb */
 .gnb {
-  margin: 220px 0 0 140px;
+  margin: 220px 0;
   display: flex;
   flex-direction: column;
   width: 220px;
@@ -105,28 +102,29 @@ h1 {
 /* main_title */
 .main {
   /* position: relative; */
+  background: green;
 }
 .main_title {
-  position: absolute;
-  width: 960px;
-  top: 220px;
-  left: 448px;
-  /* background: #888; */
+  width: 100%;
+  margin: 220px 0 0 0;
   text-align: center;
-  padding-bottom: 35px;
+  /* background: #888; */
+  /* padding-bottom: 35px; */
 }
+
+.main_title:after {
+  content: '';
+  display: block;
+  width: 267px;
+  height: 1px;
+  margin: 35px auto;
+  background: #999;
+}
+
 .main_title p {
   color: #999;
   line-height: 1.2;
 }
 .main_title h1 {
   color: var(--accent);
-}
-.main .line {
-  position: absolute;
-  top: 383px;
-  left: 790px;
-  width: 267px;
-  height: 1.5px;
-  background: #999;
 }

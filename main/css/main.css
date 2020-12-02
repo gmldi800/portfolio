@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&Roboto:wght@300;400;500;700&display=swap');
 
-.wrap {
-  position: relative;
-  /* background: black; */
-}
 .container {
-  width: 90%;
-  max-width: 1315px;
+  width: 1382px;
   margin: 0 auto;
 }
 span {
@@ -272,8 +267,6 @@ span {
 /* header */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 160px;
   width: 100%;
   background: #fff;
@@ -304,12 +297,13 @@ span {
   display: flex;
 }
 
-.nav li {
+.header ul.nav li {
   font-size: 20px;
   letter-spacing: -1px;
   position: relative;
-  padding: 0 20px;
-  margin: 0 20px;
+}
+ul.nav li:nth-child(1) {
+  margin-right: 50px;
 }
 
 .nav li a {
@@ -326,7 +320,7 @@ span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: -16px;
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -345,10 +339,8 @@ span {
   font-size: 30px;
   letter-spacing: 1rem;
   line-height: 3rem;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
+  justify-content: center;
+  padding-top: 24rem;
   /* background: #000; */
 }
 .hi {

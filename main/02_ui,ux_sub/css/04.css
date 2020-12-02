@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.container {
+  width: 1382px;
+  margin: 0 auto;
+  position: relative;
+}
+
+span {
+  color: var(--accent);
+}
+/* header */
+.header {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.header .container.top {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  margin-right: auto;
+}
+.left .logo:hover {
+  filter: invert(48%) sepia(86%) saturate(971%) hue-rotate(166deg) brightness(103%) contrast(81%);
+}
+
+.logo_extra {
+  line-height: 50px;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #333;
+}
+.nav {
+  display: flex;
+}
+
+.header ul.nav li {
+  font-size: 20px;
+  letter-spacing: -1px;
+  position: relative;
+}
+ul.nav li:nth-child(1) {
+  margin-right: 50px;
+}
+
+ul.nav li a {
+  display: block;
+}
+
+.nav li a:hover {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.nav li a:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: var(--accent);
+}
+.container.bottom {
+  display: flex;
+}
+
+/* gnb */
+.gnb {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 580px;
+  /* background: #555; */
+  border-right: 1px dashed #999;
+}
+h1 {
+  font-size: 43px;
+  font-weight: bold;
+  margin-bottom: 43px;
+}
+.gnb li {
+  font-size: 20px;
+  color: #999;
+  line-height: 2;
+  font-weight: 600;
+}
+.gnb li:hover {
+  color: var(--accent);
+}
+
+/* main_title */
+.main {
+  width: 1162px;
+  text-align: center;
+  /* background: #888; */
+}
+.main_title {
+  margin-left: 35px;
+  position: relative;
+}
+
+.main_title:after {
+  content: '';
+  display: block;
+  width: 267px;
+  height: 1px;
+  margin: 35px auto;
+  background: #999;
+}
+
+.main_title p {
+  color: #999;
+  line-height: 1.2;
+}
+.main_title h1 {
+  color: var(--accent);
+}
+/* prev_btn */
+.main_title .prev_btn {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  color: #333;
+}
+.prev_btn a i {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* banners */
+.banners {
+  /* background: green; */
+  margin-left: 35px;
+}
+.banners ul.photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banners ul.photos li {
+  display: flex;
+  width: 300px;
+  height: 660px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
+}
+
+.banners ul.photos li a img {
+  border-radius: 30px;
+}
