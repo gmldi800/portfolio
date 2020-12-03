@@ -160,5 +160,5 @@ body {
   line-height: 50px;
   cursor: pointer;
   z-index: 1000;
-  /* display: none; */
+  display: none;
 }

@@ -276,7 +276,7 @@ h1 {
 .main {
   width: 100%;
   text-align: center;
-  /* background: #888; */
+  background: #888;
 }
 .main_title {
   margin-left: 35px;
@@ -318,13 +318,13 @@ h1 {
 /* photo */
 .photo{
   width: 100%;
+  background: red;
+  margin-left: 15px;
   
 }
 .photo p{
-  width: 1160px;
-  margin: 0 auto;
-}
-.photo img{
-  box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
-  margin-left: 15px;
+  /* margin: 0 auto; */
+  /* box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25); */
+  width: 100%;
+
 }
