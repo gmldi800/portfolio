@@ -141,7 +141,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
   margin-bottom: 40px;
 }
@@ -305,10 +305,7 @@ h1 {
 .banners ul.photos img {
   width: 300px;
   height: 300px;
-  /* border-radius: 13px; */
   box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
-  
-  /* margin-right: 50px; */
 }
 .photos {
   display: grid;

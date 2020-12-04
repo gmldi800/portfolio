@@ -117,7 +117,7 @@ h1 {
 
 .main_title p {
   color: #999;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .main_title h1 {
   color: var(--accent);
@@ -136,9 +136,9 @@ h1 {
 
 .banners ul.photos li {
   width: 226px;
-  height: 450px;
-  border-radius: 13px;
-  box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
+  height: 430px;
+  border: 1px solid #eee;
+  border-radius: 10px;
 }
 .banners ul.photos li:hover {
   opacity: 0.7;

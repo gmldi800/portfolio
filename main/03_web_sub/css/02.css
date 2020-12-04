@@ -276,7 +276,7 @@ h1 {
 .main {
   width: 100%;
   text-align: center;
-  background: #888;
+  /* background: #888; */
 }
 .main_title {
   margin-left: 35px;
@@ -294,7 +294,7 @@ h1 {
 
 .main_title p {
   color: #999;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .main_title h1 {
   color: var(--accent);
@@ -319,12 +319,10 @@ h1 {
 .photo{
   width: 100%;
   background: red;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   
 }
 .photo p{
-  /* margin: 0 auto; */
-  /* box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25); */
-  width: 100%;
-
+  width: 1160px;
+  float: right;
 }

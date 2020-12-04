@@ -190,24 +190,22 @@
         nextArrow: $('.next_btn')
       })
 
-      $(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 500) {
-            $('.go_top').fadeIn()
-          } else {
-            $('.go_top').fadeOut()
-          }
-        })
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $('.go_top').stop().fadeIn()
+        } else {
+          $('.go_top').stop().fadeOut()
+        }
+      })
 
-        $('.go_top').click(function () {
-          $('html, body').animate(
-            {
-              scrollTop: 0
-            },
-            400
-          )
-          return false
-        })
+      $('.go_top').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: 0
+          },
+          400
+        )
+        return false
       })
     </script>
   </body>
