@@ -164,7 +164,12 @@ h1 {
   margin-bottom: 60px;
   box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
 }
-
+.banners ul.photos li:nth-child(11),
+.banners ul.photos li:nth-child(12),
+.banners ul.photos li:nth-child(13) {
+  width: 725px;
+  height: 500px;
+}
 .banners ul.photos li a img {
   border-radius: 30px;
 }

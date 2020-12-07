@@ -147,3 +147,282 @@ img {
 body {
   font-family: 'Noto Sans KR', sans-serif;
 }
+/* modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 872px;
+  height: 628px;
+  z-index: 100;
+  display: none;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.7);
+  font-family: 'Roboto', sans-serif;
+}
+.modal h1 {
+  font-size: 17px;
+}
+.modal_top {
+  position: absolute;
+  top: 27px;
+  right: 80px;
+  color: #21ade7;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+}
+.modal_top i {
+  margin-left: 10px;
+  font-size: 30px;
+  line-height: 20px;
+}
+.close i {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+.modal footer {
+  position: absolute;
+  bottom: 12px;
+  right: 50%;
+  color: #21ade7;
+  font-size: 15px;
+}
+/* modal_left */
+.modal_01 .photo {
+  width: 214px;
+  height: 214px;
+  margin: 92px 0 0 39px;
+}
+.moadal_left {
+  margin: 18px 0 0 64px;
+}
+
+.info {
+  width: 415px;
+  display: flex;
+}
+
+.moadal_left h4 {
+  width: 53px;
+  color: #21ade7;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 15px;
+  line-height: 1.7;
+}
+.moadal_left p {
+  line-height: 1.7;
+}
+/* modal_right */
+.modal_right {
+  position: absolute;
+  top: 103px;
+  right: 58px;
+  display: flex;
+}
+.modal_01 h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+}
+.edu_text,
+.certi_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu_text p,
+.certi p {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+.e_2019,
+.e_2020,
+.c_2020,
+.d_2020 {
+  display: flex;
+}
+.e_2019 {
+  margin: 0 30px 8px 0;
+}
+.modal_right h2 {
+  margin-bottom: 17px;
+}
+
+.modal_right p {
+  display: block;
+  margin-right: 7px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: 'Roboto', sans-serif;
+}
+.modal_right h5 {
+  line-height: 22px;
+}
+.edu {
+  display: block;
+  margin-right: 10px;
+}
+.edu,
+.certi {
+  font-size: 14px;
+  color: #4e4d4d;
+}
+
+/* modal_skill */
+.skill {
+  position: absolute;
+  top: 290px;
+  left: 425px;
+  display: flex;
+  width: 360px;
+  /* height: 168px; */
+}
+.skill h2 {
+  margin-right: 36px;
+}
+.skill .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill .skills .sk {
+  width: 44px;
+  height: 44px;
+  margin-right: 60px;
+  margin-bottom: 36px;
+}
+.sk p {
+  color: #969696;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 11px;
+  font-family: 'Roboto', sans-serif;
+}
+.skill .skills .sk:nth-child(3),
+.skill .skills .sk:nth-child(6) {
+  margin-right: 0;
+}
+/* modal_like */
+.like {
+  position: absolute;
+  top: 466px;
+  left: 425px;
+  display: flex;
+}
+.like h2 {
+  margin-right: 45px;
+}
+.like .likes {
+  display: flex;
+  margin-top: 20px;
+}
+.like .likes .li {
+  width: 46px;
+  height: 46px;
+  margin-right: 60px;
+  margin-bottom: 36px;
+}
+.like .likes .li p {
+  color: #969696;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 11px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* button*/
+.next {
+  position: absolute;
+  top: 46%;
+  right: 300px;
+  /* transform: translateY(-50%); */
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+  width: 60px;
+}
+.prev {
+  position: absolute;
+  top: 45%;
+  left: 300px;
+  /* transform: translateY(-50%); */
+  z-index: 5;
+  cursor: pointer;
+  display: none;
+  width: 60px;
+}
+/* modal02 */
+.modal_02 {
+  /* font-family: 'Roboto', sans-serif; */
+}
+.modal_02 .dda {
+  position: absolute;
+  top: 96px;
+  left: 53px;
+}
+
+.modal_02 h2 {
+  position: absolute;
+  top: 138px;
+  left: 86px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal_02 .first_p {
+  position: absolute;
+  top: 180px;
+  left: 86px;
+  color: #333;
+  line-height: 1.6;
+  font-size: 13px;
+
+  /* width: 280px; */
+}
+.modal_02 .second_p {
+  position: absolute;
+  bottom: 168px;
+  left: 87px;
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 500;
+}
+.modal_02 .dda_end {
+  position: absolute;
+  bottom: 139px;
+  left: 419px;
+}
+
+.modal_02 .photo {
+  position: absolute;
+  top: 138px;
+  right: 134px;
+  width: 190px;
+}
+.modal_02 h5 {
+  position: absolute;
+  bottom: 134px;
+  right: 154px;
+  color: #555;
+  font-size: 11px;
+}
+/* dimm */
+.dimm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  display: none;
+}
