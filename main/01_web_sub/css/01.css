@@ -283,14 +283,14 @@ h1 {
   position: relative;
 }
 
-.main_title:after {
+/* .main_title:after {
   content: '';
   display: block;
   width: 267px;
   height: 1px;
   margin: 35px auto;
   background: #999;
-}
+} */
 
 .main_title p {
   color: #999;
@@ -320,6 +320,23 @@ h1 {
   width: 100%;
   
 }
+.main_photo h4{
+  background:#fff;
+  color:#21ADE7;
+  border: 1px solid #808586;
+  width: 148px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 34px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 23px;
+  cursor: pointer;
+  justify-content: space-between;
+  margin: 0 auto;
+  
+}
+
 .main_photo p{
   width: 1160px;
   margin: 0 auto;
