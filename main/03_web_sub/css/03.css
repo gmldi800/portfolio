@@ -316,13 +316,15 @@ h1 {
 }
 
 /* photo */
-.photo{
+.main_photo{
   width: 100%;
   background: red;
   /* margin-left: 15px; */
   
 }
-.photo p{
+.main_photo p{
   width: 1160px;
   float: right;
+  border:1px solid #dbdbdb;
+  margin-bottom: 60px;
 }

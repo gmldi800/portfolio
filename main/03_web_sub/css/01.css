@@ -276,6 +276,7 @@ h1 {
 .main {
   width: 100%;
   text-align: center;
+  position: relative;
   /* background: #888; */
 }
 .main_title {
@@ -294,7 +295,7 @@ h1 {
 
 .main_title p {
   color: #999;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .main_title h1 {
   color: var(--accent);
@@ -316,15 +317,39 @@ h1 {
 }
 
 /* photo */
-.photo{
+.main_photo{
   width: 100%;
-  
+  display: flex;
+  margin-left: 45px;
 }
-.photo p{
-  width: 1160px;
-  margin: 0 auto;
+.main_photo h4{
+  background:#585E61;
+  width: 92px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50px;
+  text-align: center;
+  color:#fff;
+  font-weight: 300;
+  margin-bottom: 23px;
+  cursor: pointer;
 }
-.photo img{
-  box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
-  margin-left: 15px;
+.main_photo h4.original{
+  margin-left: 169px
+}
+.main_photo h4.renewal{
+  margin-left: 269px;
+}
+.main_photo .gucci img{
+  width: 430px;
+}
+.main_photo i{
+  font-size: 50px;
+  margin-top: 300px;
+  padding: 0 30px;
+  opacity: 0.7;
+}
+.main_photo .re img{
+  width: 630px;
+  border:1px solid #dbdbdb;
 }

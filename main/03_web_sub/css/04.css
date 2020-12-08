@@ -294,7 +294,7 @@ h1 {
 
 .main_title p {
   color: #999;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .main_title h1 {
   color: var(--accent);
@@ -316,15 +316,16 @@ h1 {
 }
 
 /* photo */
-.photo{
+.main_photo{
   width: 100%;
   
 }
-.photo p{
+.main_photo p{
   width: 1160px;
   margin: 0 auto;
 }
-.photo img{
-  box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
+.main_photo img{
+  border:1px solid #dbdbdb;
   margin-left: 15px;
+  margin-bottom: 100px;
 }
