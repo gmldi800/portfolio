@@ -112,6 +112,7 @@ h1 {
   color: #999;
   line-height: 2;
   font-weight: 600;
+  width: 188.91px;
 }
 .gnb li:hover {
   color: var(--accent);
@@ -124,7 +125,7 @@ h1 {
   /* background: #888; */
 }
 .main_title {
-  margin-left: 35px;
+  /* margin-left: px; */
 }
 
 .main_title:after {
@@ -333,6 +334,9 @@ h1 {
   font-weight: 300;
   margin-bottom: 23px;
   cursor: pointer;
+}
+.main_photo h4:hover{
+  background:var(--accent)
 }
 .main_photo h4.original{
   margin-left: 169px
