@@ -196,12 +196,12 @@ body {
 }
 /* modal_left */
 .modal_01 .photo {
-  width: 214px;
-  height: 214px;
-  margin: 92px 0 0 39px;
+  width: 290px;
+  height: 290px;
+  margin: 85px 0 0 45px;
 }
 .moadal_left {
-  margin: 18px 0 0 64px;
+  margin: 0px 0 0 80px;
 }
 
 .info {
@@ -224,25 +224,24 @@ body {
 .modal_right {
   position: absolute;
   top: 103px;
-  right: 58px;
+  left: 425px;
   display: flex;
 }
 .modal_01 h2 {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 700;
   color: #222;
 }
 .edu_text,
 .certi_text {
   display: flex;
   flex-direction: column;
+  font-size: 13.5px;
 }
 
 .edu_text p,
 .certi p {
-  font-size: 14px;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
 }
 .e_2019,
 .e_2020,
@@ -280,7 +279,7 @@ body {
 /* modal_skill */
 .skill {
   position: absolute;
-  top: 290px;
+  top: 292px;
   left: 425px;
   display: flex;
   width: 360px;
@@ -332,10 +331,11 @@ body {
 }
 .like .likes .li p {
   color: #969696;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
   margin-top: 11px;
   font-family: 'Roboto', sans-serif;
+  font-weight: ;
 }
 
 /* button*/

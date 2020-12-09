@@ -321,9 +321,8 @@ h1 {
   
 }
 .main_photo h4{
-  background:#fff;
-  color:#21ADE7;
-  border: 1px solid #808586;
+  background:#21ADE7;
+  color:#fff;
   width: 148px;
   height: 35px;
   line-height: 33px;
@@ -339,9 +338,10 @@ h1 {
   width: 100%;
 }
 .main_photo h4:hover{
-  background:#21ADE7;
-  border: none;
-  color: #fff;
+  border: 1px solid #21ADE7;
+  color: #21ADE7;
+  background:#fff;
+  font-weight: 600;
   font-size: 17px;
   /* font-weight: 600; */
 

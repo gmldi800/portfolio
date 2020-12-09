@@ -79,7 +79,7 @@ ul.nav li:nth-child(1) {
   background-size: cover;
   position: relative;
 }
-.banner_text {
+.typing-txt {
   font-size: 30px;
   letter-spacing: 1rem;
   line-height: 3rem;
@@ -87,6 +87,32 @@ ul.nav li:nth-child(1) {
   padding-top: 24rem;
   /* background: #000; */
 }
+
+/* 타이핑 */
+.typing-txt {
+  display: none;
+}
+/* ul {
+  list-style: none;
+} */
+.typing ul li.on {
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
 .hi {
   margin-bottom: 70px;
 }
