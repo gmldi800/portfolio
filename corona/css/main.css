@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 :root {
   --primary: #333;
   --light: #e5e5f4;
@@ -7,8 +6,7 @@
   --dark: #090513;
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  background: rgba(237, 242, 246, 1);
+  font-family: 'Noto Sans KR', sans-serif;
   color: var(--primary);
   font-size: 14px;
   font-weight: 400;
@@ -16,6 +14,9 @@ body {
 section {
   position: relative;
   height: 100vh;
+}
+.back {
+  background: #f9f9f9;
 }
 .mouse_box {
   position: absolute;
@@ -47,16 +48,15 @@ section {
 .mouse::after {
   content: '';
   position: absolute;
-  bottom: -16px;
-  left: 6px;
+  bottom: -14px;
+  left: 6.5px;
   width: 10px;
   height: 10px;
-  transform: rotate(-45deg);
+  /* border: 2px solid var(--light); */
   border-bottom: 2px solid var(--primary);
   border-left: 2px solid var(--primary);
-  animation: wheel 1s infinite alternate;
-
-  /* border: 2px solid var(--light); */
+  transform: rotate(-45deg);
+  animation: wheel 1s infinite;
 }
 
 .container {
@@ -94,20 +94,23 @@ section {
 .header span {
   cursor: pointer;
 }
+/*nav*/
 .nav {
   position: fixed;
   top: 0;
   left: -330px;
   width: 300px;
   height: 100vh;
-  background: var(--dark);
+  background: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   transition: left 0.3s;
   z-index: 1;
+    border-right: 1px solid #ccc;
 }
+
 .nav.active {
   left: 0;
 }
@@ -117,18 +120,26 @@ section {
   padding: 20px 30px;
   box-sizing: border-box;
 }
+
 .nav a {
   display: block;
   font-weight: 300px;
-  font-size: 30px;
+  font-size: 29px;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #666;
   transition: padding 0.3s;
 }
+
+.nav a:hover {
+  font-weight: 700;
+  font-size: 30px;
+}
 .nav a.active {
-  color: #fff;
+/*  color: #111;*/
   padding-left: 30px;
 }
+
+/*seacrh*/
 .search_area {
   position: fixed;
   top: -100px;
@@ -173,19 +184,22 @@ section {
   margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #777;
+  font-weight:400;
+    font-size: 15px
 }
 .info h2 {
   font-weight: 700;
   font-size: 50px;
-  color: var(--accent);
+  color: #2e2e2e;
   text-transform: uppercase;
   margin-bottom: 40px;
   width: 80%;
   line-height: 1.2;
 }
 .info .line {
-  height: 3px;
-  background: var(--accent);
+  height: 1px;
+  background: #ccc;
   width: 0%;
   transition: width 0.3s;
 }
@@ -193,10 +207,11 @@ section {
   width: 50%;
 }
 .info p {
-  font-size: 14px;
+  font-size: 15px;
   margin: 40px 0 60px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
+
 .info .contact {
   display: flex;
   flex-direction: column;
@@ -211,6 +226,13 @@ section {
   font-size: 26px;
   margin-right: 10px;
 }
+.info .flex {
+  display: flex;
+  flex-direction: row;
+}
+.info .flex a {
+  margin-right: 30px;
+}
 .photo {
   width: 480px;
   height: 480px;
@@ -224,7 +246,7 @@ section {
   border-radius: 12px;
 }
 #fp-nav ul li a span {
-  background: var(--accent);
+  background: #ccc;
 }
 /* 마우스 애니메이션 */
 @keyframes wheel {
@@ -233,7 +255,7 @@ section {
     opacity: 1;
   }
   50% {
-    opacity: 0.5.ㅑ;
+    opacity: 0.5;
   }
   100% {
     bottom: -30px;

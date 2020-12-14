@@ -111,6 +111,7 @@ body {
 ol,
 ul {
   list-style: none;
+    color:inherit
 }
 blockquote,
 q {
