@@ -198,10 +198,11 @@ body {
 .modal_01 .photo {
   width: 290px;
   height: 290px;
-  margin: 85px 0 0 45px;
+  margin: 70px 0 0 48px;
 }
 .moadal_left {
-  margin: 0px 0 0 80px;
+  margin: 10px 0 0 80px;
+  font-size: 13.5px;
 }
 
 .info {
@@ -218,7 +219,8 @@ body {
   line-height: 1.7;
 }
 .moadal_left p {
-  line-height: 1.7;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
 }
 /* modal_right */
 .modal_right {

@@ -92,10 +92,10 @@ ul.nav li:nth-child(1) {
 .typing ul li {
   font-size: 30px;
   line-height: 2;
+  letter-spacing: 10px;
+  /* color: #333; */
 }
-.typing ul li span {
-  color: var(--accent);
-}
+
 .typing ul li.on {
   display: inline-block;
   animation-name: cursor;
