@@ -4,9 +4,6 @@
   width: 1382px;
   margin: 0 auto;
 }
-span {
-  color: var(--accent);
-}
 
 /* header */
 .header {
@@ -79,22 +76,26 @@ ul.nav li:nth-child(1) {
   background-size: cover;
   position: relative;
 }
-.typing-txt {
-  font-size: 30px;
-  letter-spacing: 1rem;
-  line-height: 3rem;
-  justify-content: center;
-  padding-top: 24rem;
-  /* background: #000; */
+
+.banner .container {
+  width: 1382px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* 타이핑 */
+/* type */
 .typing-txt {
   display: none;
 }
-/* ul {
-  list-style: none;
-} */
+.typing ul li {
+  font-size: 30px;
+  line-height: 2;
+}
+.typing ul li span {
+  color: var(--accent);
+}
 .typing ul li.on {
   display: inline-block;
   animation-name: cursor;
@@ -111,11 +112,4 @@ ul.nav li:nth-child(1) {
   100% {
     border-right: 1px solid #fff;
   }
-}
-
-.hi {
-  margin-bottom: 70px;
-}
-.my {
-  letter-spacing: 1.6rem;
 }
