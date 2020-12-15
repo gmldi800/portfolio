@@ -67,7 +67,9 @@ ul.nav li:nth-child(1) {
   border-radius: 100%;
   background: var(--accent);
 }
-
+li.ac:nth-child(6) {
+  color: var(--accent);
+}
 /* section */
 .banner {
   background: url(../images/bg1.jpg) no-repeat;
@@ -101,6 +103,10 @@ ul.nav li:nth-child(1) {
   animation-name: cursor;
   animation-duration: 0.3s;
   animation-iteration-count: infinite;
+}
+
+.typing ul li:nth-child(2){
+    margin-top: 50px
 }
 @keyframes cursor {
   0% {

@@ -123,21 +123,32 @@ section {
 
 .nav a {
   display: block;
-  font-weight: 300px;
-  font-size: 29px;
-  padding: 10px 0;
-  color: #666;
-  transition: padding 0.3s;
+    width: 90%;
+  font-size: 25px;
+  margin: 10px 0;
+  color: #555;
+    text-align: center;
+/*  transition: padding 0.3s;*/
+}
+.nav li:first-child a{
+    font-size: 30px;
+   font-weight: 600;
+    color: #1582DA;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1582DA;
 }
 
-.nav a:hover {
-  font-weight: 700;
-  font-size: 30px;
+.nav li a:hover {
+  font-weight: bold;
+}
+.nav li:first-child:hover a{
+   color:#125E9B;
+    transition: 0.3s
 }
 .nav a.active {
-/*  color: #111;*/
   padding-left: 30px;
 }
+
 
 /*seacrh*/
 .search_area {

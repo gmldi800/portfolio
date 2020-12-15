@@ -195,14 +195,20 @@ body {
   font-size: 15px;
 }
 /* modal_left */
-.modal_01 .photo {
+.profile {
   width: 290px;
   height: 290px;
   margin: 70px 0 0 48px;
 }
+.profile img {
+  border-radius: 100%;
+}
 .moadal_left {
-  margin: 10px 0 0 80px;
-  font-size: 13.5px;
+  margin: 30px 0 0 80px;
+  font-size: 14px;
+    width: 250px;
+    height: 150px;
+/*    background:Red*/
 }
 
 .info {
@@ -216,12 +222,16 @@ body {
   font-size: 15px;
   font-weight: bold;
   margin-right: 15px;
-  line-height: 1.7;
+  line-height: 1.8;
 }
-.moadal_left p {
+.info p {
   line-height: 1.8;
   letter-spacing: 0.3px;
+  font-weight: 600;
+    font-size: 15px;
+    color:#222
 }
+
 /* modal_right */
 .modal_right {
   position: absolute;
