@@ -14,7 +14,8 @@ span {
   height: 160px;
   width: 100%;
   background: #fff;
-  margin-bottom: 50px;margin-bottom: 51px;
+  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .header .container.top {
@@ -71,10 +72,7 @@ ul.nav li a {
 }
 .container.bottom {
   display: flex;
-  posi
 }
-
-
 
 /* gnb */
 .gnb {
@@ -108,15 +106,7 @@ h1 {
 }
 .main_title {
   margin-left: 35px;
-}
-
-.main_title:after {
-  content: '';
-  display: block;
-  width: 267px;
-  height: 1px;
-  margin: 35px auto;
-  background: #999;
+  margin-bottom: 2rem;
 }
 
 .main_title p {

@@ -8,7 +8,7 @@
 /* header */
 .header {
   display: flex;
-  height: 160px;
+  height: 120px;
   width: 100%;
   background: #fff;
   position: fixed;
@@ -76,7 +76,7 @@ li.ac:nth-child(6) {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  position: relative;
+    background-position: center
 }
 
 .banner .container {
@@ -106,7 +106,7 @@ li.ac:nth-child(6) {
 }
 
 .typing ul li:nth-child(2){
-    margin-top: 50px
+/*    margin-top: 50px*/
 }
 @keyframes cursor {
   0% {

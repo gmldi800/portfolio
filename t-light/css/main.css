@@ -38,6 +38,9 @@
   margin: 15px 0 0 25px;
   width: 200px;
 }
+.logo:hover img{
+    opacity: 0.8
+}
 .nav {
   display: flex;
 }
@@ -48,7 +51,12 @@
   font-weight: bold;
   color: #fff;
 }
-
+.nav a:hover{
+    color: goldenrod;
+}
+.header.active .nav a:hover{
+    color: goldenrod;
+}
 .slider {
   position: relative;
 }
@@ -113,6 +121,9 @@
   width: 163px;
   height: 230px;
   margin-right: 90px;
+}
+.section_01 .img:hover{
+    opacity: 0.8
 }
 .tel_02,
 .tel_03,
@@ -209,12 +220,20 @@
   height: 140px;
   border-radius: 50%;
   margin: 48px 0;
+        cursor: pointer;
+}
+.section_02 .avatar img:hover{
+    opacity: 0.8
 }
 /* section03 */
 .section_03 .img {
   width: 150px;
   height: 200px;
   margin-right: 90px;
+    
+}
+.section_03 .img:hover{
+    opacity: 0.8
 }
 .section_03 .container.sec_03 {
   padding: 4rem 0;
@@ -282,21 +301,22 @@
   font-size: 15px;
   color: #777;
 }
+
 .section_04 .posts {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4rem;
-  max-width: 90%;
-}
-.section_04 .posts {
+    margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.section_04 .posts .post img {
+
+.section_04 .posts img{
   width: 160px;
   height: 230px;
   border-radius: 10px;
+    cursor: pointer
+}
+.section_04 .posts img:hover{
+    opacity: 0.8
 }
 /* footer */
 footer {

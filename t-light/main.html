@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twilight</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>Twilight</title>
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
 
   <body>
@@ -52,7 +53,7 @@
     <section class="section section_01">
       <div class="container sec_01">
         <div class="img">
-          <img src="./Twilight.image/sec_01_img.jpg" alt="" />
+          <a href="./page01.html"><img src="./Twilight.image/sec_01_img.jpg" alt="" /></a>
         </div>
         <!-- sec_01 text -->
         <div class="section_01 text">
@@ -121,7 +122,9 @@
     <!-- section03 -->
     <section class="section_03">
       <div class="container sec_03">
-        <div class="img"><img src="./Twilight.image/director.jpg" alt="" /></div>
+        <div class="img">
+          <a href="./page02.html"><img src="./Twilight.image/director.jpg" alt="" /></a>
+        </div>
         <!-- sec_03 text -->
         <div class="section_03 text">
           <div class="sec_03_title">
@@ -149,45 +152,54 @@
         </div>
       </div>
     </section>
-    <!-- banner -->
-    <!-- <div class="banner">
-      <div class="photo">
-        <div></div>
-      </div>
-      <div class="text"></div>
-    </div> -->
-    <!-- section04 -->
+
     <section class="section_04">
       <div class="container">
         <div class="title_area">
           <h3>시리즈 순서</h3>
           <a href="./page01.html"><p>더보기</p></a>
         </div>
-        <div class="posts">
-          <div class="post"><img src="./Twilight.image/post/1.jpg" alt="" /></div>
-          <div class="post"><img src="./Twilight.image/post/2.jpg" alt="" /></div>
-          <div class="post"><img src="./Twilight.image/post/3.jpg" alt="" /></div>
-          <div class="post"><img src="./Twilight.image/post/4.jpg" alt="" /></div>
-          <div class="post"><img src="./Twilight.image/post/5.jpg" alt="" /></div>
-        </div>
+        <ul class="posts">
+          <li class="post"><img src="./Twilight.image/post/1.jpg" alt="" /></li>
+          <li class="post"><img src="./Twilight.image/post/2.jpg" alt="" /></li>
+          <li class="post"><img src="./Twilight.image/post/3.jpg" alt="" /></li>
+          <li class="post"><img src="./Twilight.image/post/4.jpg" alt="" /></li>
+          <li class="post"><img src="./Twilight.image/post/5.jpg" alt="" /></li>
+        </ul>
       </div>
     </section>
     <!-- footer -->
     <footer>
       <div class="footer container">
         <div class="footer_left">
-          <div class="footer_logo"><img src="./Twilight.image/logo/white_logo.png" alt="" /></div>
+          <div class="footer_logo">
+            <a href="#"><img src="./Twilight.image/logo/white_logo.png" alt="" /></a>
+          </div>
         </div>
         <div class="footer_right">
           <span>Copyright © 2008 — 2012. All Right Reserved.</span>
         </div>
       </div>
     </footer>
+
     <script>
+      var goTop = $('.go_top')
+      var header = $('.header')
+
+      $(window).scroll(function () {
+        var scrollTopValue = $(document).scrollTop()
+        if (scrollTopValue > 0) {
+          header.addClass('active')
+        } else {
+          header.removeClass('active')
+        }
+      })
+
       $('.slide').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 1500,
+        infinite: true,
+        autoplaySpeed: 1000,
         prevArrow: $('.prev_btn'),
         nextArrow: $('.next_btn')
       })

@@ -31,6 +31,9 @@ h2 {
   margin: 15px 0 0 25px;
   width: 200px;
 }
+.logo:hover img{
+    opacity: 0.8
+}
 .nav {
   display: flex;
 }
@@ -41,7 +44,9 @@ h2 {
   font-weight: bold;
   color: #000;
 }
-
+.nav a:hover{
+    color: goldenrod;
+}
 /* top */
 .title {
   margin: 0 auto;

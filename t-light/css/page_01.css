@@ -33,6 +33,9 @@ h2 {
   margin: 15px 0 0 25px;
   width: 200px;
 }
+.logo:hover img{
+    opacity: 0.8
+}
 .nav {
   display: flex;
 }
@@ -42,6 +45,9 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   color: #000;
+}
+.nav a:hover{
+    color: goldenrod;
 }
 .header ul li a {
   z-index: 101;
@@ -141,6 +147,7 @@ section .photo {
   max-width: 400px;
   border-radius: 10px;
   overflow: hidden;
+
 }
 
 .section_01 .photo,
