@@ -153,14 +153,14 @@ p {
   background: var(--light);
   color: var(--dark);
   font-size: 1.2rem;
-    font-weight: 600;
+  font-weight: 600;
   padding: 1.2rem 1.8rem;
   text-transform: uppercase;
   border-radius: 6px;
   margin-top: 12px;
 }
-.sub_text .slide_btn:hover{
-    background:var(--accent)
+.sub_text .slide_btn:hover {
+  background: var(--accent);
 }
 /* 헤더 */
 header {
@@ -225,9 +225,9 @@ header {
   flex-direction: column;
   padding: 20px;
 }
-.section_01 .right_ani img{
-    width: 580px;
-    height: 406px;
+.section_01 .right_ani img {
+  width: 580px;
+  height: 406px;
 }
 
 .section_02 .info {
@@ -300,7 +300,8 @@ footer h4 {
 }
 
 .footer_info .sun {
-  margin: 3rem 0;
+  margin: 3rem 0 2rem 0;
+  color: #fff;
 }
 
 .footer_extra {
@@ -406,7 +407,11 @@ footer h4 {
   h4 {
     font-size: 36px;
   }
-
+  h5 {
+    margin-top: 18px;
+    font-size: 11px;
+    line-height: 1.3;
+  }
   /* 헤더 */
   .nav {
     position: initial;
