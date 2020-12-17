@@ -78,8 +78,6 @@ ul.nav li a {
   flex-direction: column;
   width: 220px;
   height: 580px;
-  /* background: #555; */
-  border-right: 1px dashed #999;
 }
 h1 {
   font-size: 43px;
@@ -118,7 +116,6 @@ h1 {
 
 /* banners */
 .banners {
-  /* background: green; */
   margin-left: 35px;
   height: 850px;
   overflow: hidden;

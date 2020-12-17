@@ -25,13 +25,15 @@ span {
   z-index: 1000;
   display: none;
 }
+
 /* header */
 .header {
   display: flex;
   height: 160px;
   width: 100%;
   background: #fff;
-  margin-bottom: 50px;margin-bottom: 51px;
+  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .header .container.top {
@@ -88,10 +90,7 @@ ul.nav li a {
 }
 .container.bottom {
   display: flex;
-  posi
 }
-
-
 
 /* gnb */
 .gnb {
@@ -99,164 +98,6 @@ ul.nav li a {
   flex-direction: column;
   width: 220px;
   height: 580px;
-  /* background: #555; */
-  border-right: 1px dashed #999;
-}
-h1 {
-  font-size: 43px;
-  font-weight: bold;
-  margin-bottom: 43px;
-}
-.gnb li {
-  font-size: 20px;
-  color: #999;
-  line-height: 2;
-  font-weight: 600;
-  width: 188.91px;
-}
-.gnb li:hover {
-  color: var(--accent);
-}
-
-/* main_title */
-.main {
-  width: 100%;
-  text-align: center;
-  /* background: #888; */
-}
-.main_title {
-
-}
-
-.main_title:after {
-  content: '';
-  display: block;
-  width: 267px;
-  height: 1px;
-  margin: 35px auto;
-  background: #999;
-}
-
-.main_title p {
-  color: #999;
-  line-height: 1.4;
-}
-.main_title h1 {
-  color: var(--accent);
-}
-
-/* banners */
-.banners {
-  /* background: green; */
-  margin-left: 35px;
-}
-.banners .popup-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.popup-gallery li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
-.popup-gallery li a {
-  display: flex;
-  width: 250px;
-  height: 250px;
-}
-.popup-gallery li:hover {
-  opacity: 0.6;
-}
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&Roboto:wght@300;400;500;700&display=swap');
-
-.container {
-  width: 1382px;
-  margin: 0 auto;
-}
-
-span {
-  color: var(--accent);
-}
-/* header */
-.header {
-  display: flex;
-  height: 160px;
-  width: 100%;
-  background: #fff;
-  margin-bottom: 50px;margin-bottom: 51px;
-}
-
-.header .container.top {
-  display: flex;
-  align-items: center;
-}
-
-.left {
-  display: flex;
-  margin-right: auto;
-}
-.left .logo:hover {
-  filter: invert(48%) sepia(86%) saturate(971%) hue-rotate(166deg) brightness(103%) contrast(81%);
-}
-
-.logo_extra {
-  line-height: 50px;
-  margin-left: 20px;
-  font-size: 13px;
-  color: #333;
-}
-.nav {
-  display: flex;
-}
-
-.header ul.nav li {
-  font-size: 20px;
-  letter-spacing: -1px;
-  position: relative;
-}
-ul.nav li:nth-child(1) {
-  margin-right: 50px;
-}
-
-ul.nav li a {
-  display: block;
-}
-
-.nav li a:hover {
-  color: var(--accent);
-  font-weight: 500;
-}
-
-.nav li a:hover::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -16px;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background: var(--accent);
-}
-.container.bottom {
-  display: flex;
-  posi
-}
-
-
-
-/* gnb */
-.gnb {
-  display: flex;
-  flex-direction: column;
-  width: 220px;
-  height: 580px;
-  /* background: #555; */
-  border-right: 1px dashed #999;
 }
 h1 {
   font-size: 43px;
@@ -285,18 +126,10 @@ h1 {
   position: relative;
 }
 
-.main_title:after {
-  content: '';
-  display: block;
-  width: 267px;
-  height: 1px;
-  margin: 35px auto;
-  background: #999;
-}
-
 .main_title p {
   color: #999;
   line-height: 1.4;
+  border-bottom: 4rem;
 }
 .main_title h1 {
   color: var(--accent);
@@ -318,42 +151,43 @@ h1 {
 }
 
 /* photo */
-.main_photo{
+.main_photo {
   width: 100%;
   display: flex;
   margin-left: 45px;
+  margin-top: 2rem;
 }
-.main_photo h4{
-  background:#585E61;
+.main_photo h4 {
+  background: #585e61;
   width: 92px;
   height: 30px;
   line-height: 28px;
   border-radius: 50px;
   text-align: center;
-  color:#fff;
+  color: #fff;
   font-weight: 300;
   margin-bottom: 23px;
   cursor: pointer;
 }
-.main_photo h4:hover{
-  background:var(--accent)
+.main_photo h4:hover {
+  background: var(--accent);
 }
-.main_photo h4.original{
-  margin-left: 169px
+.main_photo h4.original {
+  margin-left: 169px;
 }
-.main_photo h4.renewal{
+.main_photo h4.renewal {
   margin-left: 269px;
 }
-.main_photo .gucci img{
+.main_photo .gucci img {
   width: 430px;
 }
-.main_photo i{
+.main_photo i {
   font-size: 50px;
   margin-top: 300px;
   padding: 0 30px;
   opacity: 0.7;
 }
-.main_photo .re img{
+.main_photo .re img {
   width: 630px;
-  border:1px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
 }

@@ -83,8 +83,6 @@ ul.nav li a {
   flex-direction: column;
   width: 220px;
   height: 580px;
-  /* background: #555; */
-  border-right: 1px dashed #999;
 }
 h1 {
   font-size: 43px;
@@ -109,16 +107,8 @@ h1 {
 }
 .main_title {
   margin-left: 35px;
+  margin-bottom: 2rem;
   position: relative;
-}
-
-.main_title:after {
-  content: '';
-  display: block;
-  width: 267px;
-  height: 1px;
-  margin: 35px auto;
-  background: #999;
 }
 
 .main_title p {

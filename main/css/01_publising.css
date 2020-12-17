@@ -78,8 +78,6 @@ ul.nav li a {
   flex-direction: column;
   width: 220px;
   height: 580px;
-  /* background: #555; */
-  border-right: 1px dashed #999;
 }
 h1 {
   font-size: 43px;
@@ -118,23 +116,30 @@ h1 {
 
 /* banners */
 .banners {
-  /* background: green; */
   margin-left: 35px;
 }
-.banners ul.photos {
+.web_photo {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.banners ul.photos li {
+.web_photo li {
   width: 350px;
-  height: 516px;
+  height: 510px;
   overflow: hidden;
   border: 1px solid #eee;
 }
-.banners ul.photos li:hover {
+.web_photo li:hover {
   opacity: 0.7;
 }
-.banners ul.photos li a img {
+.web_photo li a {
+  width: 100%;
+  display: block;
+  height: 510px;
+}
+.web_photo li img {
+  width: 350px;
+  height: 510px;
+  overflow: hidden;
 }

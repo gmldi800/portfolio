@@ -80,8 +80,6 @@ ul.nav li a {
   flex-direction: column;
   width: 220px;
   height: 580px;
-  /* background: #555; */
-  border-right: 1px dashed #999;
 }
 h1 {
   font-size: 43px;
