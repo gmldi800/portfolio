@@ -148,7 +148,7 @@ h1 {
 .banners ul.photos li {
   display: flex;
   width: 300px;
-  height: 660px;
+  height: 100%;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 60px;
