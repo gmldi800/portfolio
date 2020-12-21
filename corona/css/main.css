@@ -116,39 +116,34 @@ section {
 }
 
 .nav li {
-  width: 100%;
+  /* width: 100%; */
   padding: 20px 30px;
   box-sizing: border-box;
 }
 
 .nav a {
   display: block;
-  width: 90%;
   font-size: 25px;
   margin: 10px 0;
   color: #555;
-  text-align: center;
   transition: padding 0.3s;
+  padding-bottom: 10px;
+  padding-left: 0;
+  /* border-bottom: 2px solid #dbdbdb; */
+
+  transition: border-bottom 0.3s;
 }
+
+.nav a.active {
+  border-bottom: 3px solid #1582da;
+  font-weight: 600;
+}
+
 .nav li:first-child a {
   font-size: 30px;
   font-weight: 600;
   color: #1582da;
   padding-bottom: 10px;
-  border-bottom: 2px solid #1582da;
-}
-
-.nav li a:hover {
-  font-weight: bold;
-}
-.nav li:first-child:hover a {
-  color: #125e9b;
-  transition: 0.3s;
-}
-.nav a.active {
-  color: #fff;
-  text-decoration: underline;
-  padding-left: 30px;
 }
 
 /*seacrh*/
