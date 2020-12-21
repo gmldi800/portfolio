@@ -146,6 +146,8 @@ section {
   transition: 0.3s;
 }
 .nav a.active {
+  color: #fff;
+  text-decoration: underline;
   padding-left: 30px;
 }
 
