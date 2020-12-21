@@ -322,8 +322,8 @@ footer h4 {
   margin-top: 3rem;
 }
 
-.footer .social {
-  margin: 0 0 3rem;
+.bottom_ani .social {
+  margin: 2rem 0 6rem;
 }
 
 .social_list {
@@ -412,27 +412,27 @@ footer h4 {
     background: url(../images/slide_03.jpg) no-repeat center / cover;
     background: transparent;
   }
-
+  /* footer */
   .footer_extra {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 6rem;
   }
 
   .footer_extra .social {
     margin-bottom: initial;
     width: 30%;
-    /* margin: 0 40px; */
+    margin: 0 50px;
   }
   .footer_extra .email {
     width: 30%;
-    margin: 0 20px;
+    margin: 0 50px;
   }
 
   .footer_extra .social a {
     padding: initial;
-    padding: 0 20px;
+    padding: 7px 20px;
     font-size: 20px;
   }
 
