@@ -3,9 +3,78 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
 }
+.container {
+  width: 1382px;
+  margin: 0 auto;
+  position: relative;
+}
 
 span {
   color: var(--accent);
+}
+/* header */
+.header {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.header .container.top {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  margin-right: auto;
+}
+.left .logo:hover {
+  filter: invert(48%) sepia(86%) saturate(971%) hue-rotate(166deg) brightness(103%) contrast(81%);
+}
+
+.logo_extra {
+  line-height: 50px;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #333;
+}
+.nav {
+  display: flex;
+}
+
+.header ul.nav li {
+  font-size: 20px;
+  letter-spacing: -1px;
+  position: relative;
+}
+ul.nav li:nth-child(1) {
+  margin-right: 50px;
+}
+
+ul.nav li a {
+  display: block;
+}
+
+.nav li a:hover {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.nav li a:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: var(--accent);
+}
+.container.bottom {
+  display: flex;
 }
 
 /* gnb */

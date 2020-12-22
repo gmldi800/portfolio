@@ -1,7 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&Roboto:wght@300;400;500;700&display=swap');
 
+.container {
+  width: 1382px;
+  margin: 0 auto;
+}
+
 span {
   color: var(--accent);
+}
+.go_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.12);
+  color: #777;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+/* header */
+.header {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 50px;
+  margin-bottom: 51px;
+}
+
+.header .container.top {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  margin-right: auto;
+}
+.left .logo:hover {
+  filter: invert(48%) sepia(86%) saturate(971%) hue-rotate(166deg) brightness(103%) contrast(81%);
+}
+
+.logo_extra {
+  line-height: 50px;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #333;
+}
+.nav {
+  display: flex;
+}
+
+.header ul.nav li {
+  font-size: 20px;
+  letter-spacing: -1px;
+  position: relative;
+}
+ul.nav li:nth-child(1) {
+  margin-right: 50px;
+}
+
+ul.nav li a {
+  display: block;
+}
+
+.nav li a:hover {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.nav li a:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: var(--accent);
+}
+.container.bottom {
+  display: flex;
 }
 
 /* gnb */

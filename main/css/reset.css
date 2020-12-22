@@ -79,14 +79,13 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  margin: 0;
+  padding: 0;
 }
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -102,6 +101,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 ol,
 ul {
@@ -115,14 +115,12 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -131,112 +129,25 @@ img {
   display: block;
   width: 100%;
 }
-
 :root {
   --primary: #000;
   --accent: #21ade7;
   --gray-light: #888;
 }
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
-
-.container {
-  width: 1382px;
-  margin: 0 auto;
-}
-/* go_top */
-.go_top {
+.modal_container {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.12);
-  color: #777;
-  font-size: 24px;
-  text-align: center;
-  line-height: 50px;
-  cursor: pointer;
-  z-index: 1000;
-  display: none;
-}
-
-/* header */
-.header {
-  display: flex;
-  height: 120px;
-  width: 100%;
-  background: #fff;
-  margin-bottom: 50px;
-}
-
-.header .container.top {
-  display: flex;
-  align-items: center;
-}
-
-.left {
-  display: flex;
-  margin-right: auto;
-}
-.left .logo:hover {
-  filter: invert(48%) sepia(86%) saturate(971%) hue-rotate(166deg) brightness(103%) contrast(81%);
-}
-
-.logo_extra {
-  line-height: 50px;
-  margin-left: 20px;
-  font-size: 13px;
-  color: #333;
-}
-.nav {
-  display: flex;
-}
-
-.header ul.nav li {
-  font-size: 20px;
-  letter-spacing: -1px;
-  position: relative;
-}
-ul.nav li:nth-child(1) {
-  margin-right: 50px;
-}
-
-ul.nav li a {
-  display: block;
-  font-weight: 500;
-}
-
-.nav li a:hover {
-  color: var(--accent);
-  
-}
-
-.nav li a:hover::before {
-  content: '';
-  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  left: -16px;
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background: var(--accent);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 872px;
+  height: 628px;
 }
-.container.bottom {
-  display: flex;
-}
-/* modal */
 .modal {
   position: absolute;
   top: 50%;
@@ -245,10 +156,8 @@ ul.nav li a {
   background: #fff;
   width: 872px;
   height: 628px;
-  z-index: 100;
-  display: none;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.7);
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 .modal h1 {
   font-size: 17px;
@@ -259,7 +168,7 @@ ul.nav li a {
   right: 80px;
   color: #21ade7;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
 }
 .modal_top i {
@@ -273,9 +182,8 @@ ul.nav li a {
   right: 30px;
   cursor: pointer;
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .modal footer {
   position: absolute;
   bottom: 12px;
@@ -283,35 +191,31 @@ ul.nav li a {
   color: #21ade7;
   font-size: 15px;
 }
-/* modal_left */
 .profile {
   width: 290px;
   height: 290px;
   margin: 70px 0 0 48px;
 }
 .profile img {
-      width: 290px;
+  width: 290px;
   height: 290px;
   border-radius: 100%;
 }
 .moadal_left {
-  margin: 30px 0 0 80px;
   font-size: 14px;
-    width: 250px;
-    height: 150px;
-/*    background:Red*/
+  width: 250px;
+  height: 150px;
+  margin: 30px 0 0 80px;
 }
-
 .info {
   width: 415px;
   display: flex;
 }
-
 .moadal_left h4 {
   width: 53px;
   color: #21ade7;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 15px;
   line-height: 1.8;
 }
@@ -319,11 +223,9 @@ ul.nav li a {
   line-height: 1.8;
   letter-spacing: 0.3px;
   font-weight: 600;
-    font-size: 15px;
-    color:#222
+  font-size: 15px;
+  color: #222;
 }
-
-/* modal_right */
 .modal_right {
   position: absolute;
   top: 103px;
@@ -341,7 +243,6 @@ ul.nav li a {
   flex-direction: column;
   font-size: 13.5px;
 }
-
 .edu_text p,
 .certi p {
   font-weight: 600;
@@ -358,13 +259,12 @@ ul.nav li a {
 .modal_right h2 {
   margin-bottom: 17px;
 }
-
 .modal_right p {
   display: block;
   margin-right: 7px;
   font-size: 14px;
   line-height: 1.7;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 .modal_right h5 {
   line-height: 22px;
@@ -378,15 +278,12 @@ ul.nav li a {
   font-size: 14px;
   color: #4e4d4d;
 }
-
-/* modal_skill */
 .skill {
   position: absolute;
   top: 292px;
   left: 425px;
   display: flex;
   width: 360px;
-  /* height: 168px; */
 }
 .skill h2 {
   margin-right: 36px;
@@ -406,13 +303,12 @@ ul.nav li a {
   font-size: 11px;
   text-align: center;
   margin-top: 11px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 .skill .skills .sk:nth-child(3),
 .skill .skills .sk:nth-child(6) {
   margin-right: 0;
 }
-/* modal_like */
 .like {
   position: absolute;
   top: 466px;
@@ -437,49 +333,44 @@ ul.nav li a {
   font-size: 12px;
   text-align: center;
   margin-top: 11px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: ;
+  font-family: Roboto, sans-serif;
 }
 
-/* button*/
-.next {
+.btns_container {
   position: absolute;
-  top: 46%;
-  right: 300px;
-  /* transform: translateY(-50%); */
-  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  z-index: 10000;
+}
+.next {
   cursor: pointer;
-  display: none;
   width: 60px;
+  float: right;
 }
 .prev {
-  position: absolute;
-  top: 45%;
-  left: 300px;
-  /* transform: translateY(-50%); */
-  z-index: 5;
   cursor: pointer;
-  display: none;
   width: 60px;
+  float: left;
+  display: none;
 }
-/* modal02 */
+
 .modal_02 {
-  /* font-family: 'Roboto', sans-serif; */
+  display: none;
 }
 .modal_02 .dda {
   position: absolute;
   top: 96px;
   left: 53px;
 }
-
 .modal_02 h2 {
   position: absolute;
   top: 138px;
   left: 86px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 .modal_02 .first_p {
   position: absolute;
   top: 180px;
@@ -487,8 +378,6 @@ ul.nav li a {
   color: #333;
   line-height: 1.6;
   font-size: 13px;
-
-  /* width: 280px; */
 }
 .modal_02 .second_p {
   position: absolute;
@@ -504,7 +393,6 @@ ul.nav li a {
   bottom: 139px;
   left: 419px;
 }
-
 .modal_02 .photo {
   position: absolute;
   top: 138px;
@@ -517,15 +405,4 @@ ul.nav li a {
   right: 154px;
   color: #555;
   font-size: 11px;
-}
-/* dimm */
-.dimm {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 2;
-  display: none;
 }
