@@ -49,11 +49,12 @@ ul.nav li:nth-child(1) {
 
 .nav li a {
   display: block;
+  font-weight: 500;
 }
 
 .nav li a:hover {
   color: var(--accent);
-  font-weight: 500;
+  
 }
 
 .nav li a:hover::before {
