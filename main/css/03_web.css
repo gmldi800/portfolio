@@ -83,7 +83,8 @@ h1 {
 .banners ul.photos img {
   width: 350px;
   height: 350px;
-  box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);
+    border: 1px solid #dbdbdb
+/*  box-shadow: 6px 10px 14px 1px rgba(0, 0, 0, 0.25);*/
 }
 
 .photos {
